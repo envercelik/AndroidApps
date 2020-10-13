@@ -1,18 +1,142 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center|top"
+            android:background="@android:color/holo_blue_light"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="40dp">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:background="@drawable/naruto">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Naruto"
+                android:textAlignment="center"
+                android:textColor="#fff">
+
+            </TextView>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center|top"
+            android:background="@android:color/holo_green_dark"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="40dp">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:background="@drawable/hinata">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#fff"
+                android:text="Hinata"
+                android:textAlignment="center">
+
+            </TextView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center|top"
+            android:background="@android:color/holo_orange_light"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="40dp">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:background="@drawable/sasuke">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#fff"
+                android:text="Sasuke"
+                android:textAlignment="center">
+
+            </TextView>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center|top"
+            android:background="@android:color/holo_purple"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="40dp">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:background="@drawable/sakura">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#fff"
+                android:text="Sakura"
+                android:textAlignment="center">
+
+            </TextView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
