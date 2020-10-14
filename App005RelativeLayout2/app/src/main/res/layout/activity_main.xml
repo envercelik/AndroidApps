@@ -1,18 +1,133 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="30dp"
     tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/grupresim"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/grup_resim">
+
+    </ImageView>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/grupisim"
+        android:textSize="20dp"
+        android:layout_toRightOf="@+id/grupresim"
+        android:text="Android uygulama geliştirme">
+
+    </TextView>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/grupisim"
+        android:layout_toRightOf="@+id/grupresim"
+        android:text="25dk önce">
+    </TextView>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/grupresim"
+        android:id="@+id/aciklama"
+        android:layout_marginBottom="20dp"
+        android:text="Harika bir resim">
+    </TextView>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/sharedImage"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/aciklama"
+        android:background="@drawable/back">
+
+    </ImageView>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/likeImage"
+        android:layout_marginRight="3dp"
+        android:layout_below="@id/sharedImage"
+        android:background="@drawable/like">
+
+    </ImageView>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:id="@+id/likeText"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/sharedImage"
+        android:layout_toRightOf="@+id/likeImage"
+        android:layout_marginTop="4dp"
+        android:text="beğen">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </TextView>
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:id="@+id/commentImage"
+        android:layout_marginRight="3dp"
+        android:layout_below="@id/sharedImage"
+        android:layout_toRightOf="@id/likeText"
+        android:background="@drawable/comment">
+
+    </ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/commentText"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/sharedImage"
+        android:layout_toRightOf="@+id/commentImage"
+        android:layout_marginTop="4dp"
+        android:text="yorum yap">
+
+    </TextView>
+
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:id="@+id/shareImage"
+        android:layout_marginRight="3dp"
+        android:layout_below="@id/sharedImage"
+        android:layout_toRightOf="@id/commentText"
+        android:background="@drawable/share">
+
+    </ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/shareText"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/sharedImage"
+        android:layout_toRightOf="@+id/shareImage"
+        android:layout_marginTop="4dp"
+        android:text="paylaş">
+
+    </TextView>
+
+
+
+
+
+</RelativeLayout>
