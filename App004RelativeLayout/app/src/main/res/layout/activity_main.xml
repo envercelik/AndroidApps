@@ -1,18 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
     tools:context=".MainActivity">
 
-    <TextView
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:id="@+id/bir"
+        android:text="1">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </Button>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/iki"
+        android:layout_toRightOf="@+id/bir"
+        android:text="2">
+
+    </Button>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/uc"
+        android:layout_toRightOf="@+id/iki"
+        android:text="3">
+    </Button>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dort"
+        android:layout_below="@+id/bir"
+        android:text="4">
+
+    </Button>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bes"
+        android:layout_toRightOf="@+id/bir"
+        android:layout_below="@+id/iki"
+        android:text="5">
+
+    </Button>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/alti"
+        android:layout_toRightOf="@+id/iki"
+        android:layout_below="@+id/uc"
+        android:text="6">
+    </Button>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/yedi"
+        android:layout_below="@+id/dort"
+
+        android:text="7">
+
+    </Button>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sekiz"
+        android:layout_toRightOf="@+id/bir"
+        android:layout_below="@+id/bes"
+        android:text="8">
+
+    </Button>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dokuz"
+        android:layout_toRightOf="@+id/iki"
+        android:layout_below="@+id/alti"
+        android:text="9">
+    </Button>
+
+
+</RelativeLayout>
