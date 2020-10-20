@@ -2,20 +2,19 @@ package com.example.app008viewelements;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.RadioGroup;
+import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity6 extends AppCompatActivity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-    }
+        setContentView(R.layout.activity_main6);
 
-    public void go(View view){
-        Intent intent = new Intent(this,MainActivity2.class);
-        startActivity(intent);
+
     }
 }
