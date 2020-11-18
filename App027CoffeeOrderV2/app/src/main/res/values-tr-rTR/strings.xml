@@ -4,7 +4,7 @@
     <string name="toppings">Ekstra</string>
     <string name="whipped_cream">krema</string>
     <string name="chocolate">çikolata</string>
-    <string name="quantity">"Kahve Sayısı :  "</string>
+    <string name="quantity">"Kahve Sayısı"</string>
     <string name="thank_you">Teşekkürler!</string>
     <string name="order_summary_name">İsminiz : </string>
     <string name="number_off_coffee">"Kahve Sayısı : "</string>

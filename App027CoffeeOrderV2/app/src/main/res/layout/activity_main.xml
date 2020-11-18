@@ -25,11 +25,11 @@
 
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
+
+            style="@style/headerText"
             android:text="@string/toppings"
-            android:textAllCaps="true" />
+
+             />
 
         <CheckBox
             android:id="@+id/checkbox_whipped_cream"
@@ -51,11 +51,9 @@
 
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
+
             android:text="@string/quantity"
-            android:textAllCaps="true" />
+            style="@style/headerText" />
 
 
         <LinearLayout
@@ -93,11 +91,10 @@
 
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
+
+            style="@style/headerText"
             android:text="@string/order_summary"
-            android:textAllCaps="true" />
+            />
 
 
         <TextView
