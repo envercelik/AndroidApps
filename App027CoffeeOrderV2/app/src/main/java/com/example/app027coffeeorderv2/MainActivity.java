@@ -136,7 +136,7 @@ public class MainActivity extends AppCompatActivity {
         String orderMessage = getString(R.string.order_summary_name) + name +  "\n";
         orderMessage += getString(R.string.has_whipped_cream) + whippedCream + "\n";
         orderMessage += getString(R.string.has_chocolate) + chocolate + "\n";
-        orderMessage += getString(R.string.quantity) + numberOfCoffees + "\n";
+        orderMessage += getString(R.string.number_off_coffee) + numberOfCoffees + "\n";
         orderMessage += getString(R.string.total) + NumberFormat.getCurrencyInstance().format(price) + "\n" ;
         orderMessage += getString(R.string.thank_you);
 
