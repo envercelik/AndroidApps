@@ -1,2 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Kahve Siparisi</string>
+    <string name="toppings">Ekstra</string>
+    <string name="whipped_cream">krema</string>
+    <string name="chocolate">çikolata</string>
+    <string name="quantity">"Kahve Sayısı :  "</string>
+    <string name="thank_you">Teşekkürler!</string>
+    <string name="order_summary_name">İsminiz : </string>
+    <string name="number_off_coffee">"Kahve Sayısı : "</string>
+    <string name="has_chocolate">"Çikolata ? :   "</string>
+    <string name="has_whipped_cream">"Krema ? :   "</string>
+    <string name="order">Sipariş</string>
+    <string name="order_summary">Sipariş Özeti</string>
+    <string name="coffee_order">Kahve Siparişi</string>
+    <string name="total">"Toplam :  "</string>
+    <string name="hint_name">İsminiz</string>
+    <string name="Yes">Evet</string>
+    <string name="No">Hayır</string>
+</resources>

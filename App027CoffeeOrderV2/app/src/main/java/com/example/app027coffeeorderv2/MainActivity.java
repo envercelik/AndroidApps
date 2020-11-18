@@ -78,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
 
         sendEmailForOrder(orderSummary);
 
-        
+
 
     }
 
@@ -90,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(Intent.ACTION_SENDTO);
         intent.setData(Uri.parse("mailto:"));
         intent.putExtra(Intent.EXTRA_EMAIL, emails );
-        intent.putExtra(Intent.EXTRA_SUBJECT, "Coffee Order");
+        intent.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.coffee_order));
         intent.putExtra(Intent.EXTRA_TEXT,orderSummary);
 
 
@@ -115,12 +115,30 @@ public class MainActivity extends AppCompatActivity {
 
     private String createOrderSummary(String name, double price , boolean addWhippedCream , boolean addChocolate) {
 
-        String orderMessage = "Name : " + name + "\n";
-        orderMessage += "Add whipped cream ? : " + addWhippedCream + "\n";
-        orderMessage += "Add chocolate  ? : " + addChocolate + "\n";
-        orderMessage += "Quantity : " + numberOfCoffees + "\n";
-        orderMessage += "Total : " + price + " tl " + "\n" ;
-        orderMessage += "Thank You!";
+        String whippedCream;
+        String chocolate;
+
+        if (addWhippedCream) {
+             whippedCream = getString(R.string.Yes);
+        } else {
+             whippedCream = getString(R.string.No);
+        }
+
+        if (addChocolate) {
+            chocolate = getString(R.string.Yes);
+        } else {
+            chocolate = getString(R.string.No);
+        }
+
+
+
+
+        String orderMessage = getString(R.string.order_summary_name) + name +  "\n";
+        orderMessage += getString(R.string.has_whipped_cream) + whippedCream + "\n";
+        orderMessage += getString(R.string.has_chocolate) + chocolate + "\n";
+        orderMessage += getString(R.string.quantity) + numberOfCoffees + "\n";
+        orderMessage += getString(R.string.total) + NumberFormat.getCurrencyInstance().format(price) + "\n" ;
+        orderMessage += getString(R.string.thank_you);
 
         return orderMessage;
     }

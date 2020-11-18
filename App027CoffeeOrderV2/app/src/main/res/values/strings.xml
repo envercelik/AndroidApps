@@ -1,3 +1,28 @@
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">App027CoffeeOrderV2</string>
+
+    <!--UI-->
+
+    <string name="toppings">toppings</string>
+    <string name="whipped_cream">Whipped Cream</string>
+    <string name="chocolate">Chocolate</string>
+    <string name="quantity">quantity</string>
+    <string name="order_summary">Order Summary</string>
+    <string name="order">Order</string>
+    <string name="hint_name">Name</string>
+
+
+    <!--Order Summary-->
+    <string name="order_summary_name">name</string>
+    <string name="thank_you">Thank You!</string>
+    <string name="has_whipped_cream">Add Whipped Cream ? : </string>
+    <string name="has_chocolate">Add chocolate  ? : </string>
+    <string name="number_off_coffee">Quantity</string>
+    <string name="total">Total : </string>
+    <string name="coffee_order">Coffee Order</string>
+    <string name="Yes">yes</string>
+    <string name="No">no</string>
+
+
+
 </resources>
